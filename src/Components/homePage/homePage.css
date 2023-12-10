@@ -1,0 +1,37 @@
+.ad{
+    content: url(../../assets/ad.jpg);
+    width: clamp(600px, 100%, 2000px);
+    height: clamp(100px, 100%, 300px);
+    border-radius: 20px;
+    margin-bottom: 70px;
+}
+.sliderContainer{
+    min-width: 100px;
+    max-width: 1900px;
+    height: 300px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type:  x mandatory;
+    scroll-behavior: smooth;
+    gap: 40px;
+}
+::-webkit-scrollbar {
+    visibility: visible;
+}   
+.viewData img {
+    width: 180px;
+    height: 180px;
+}
+.prices{
+    color: rgb(0, 0, 0);
+    margin-top: -20px;
+}
+.name{
+    width: 180px;
+    font-size: 12px;
+    color: #424242c4;
+}
+.quantity{
+    font-size: 8px;
+    padding-bottom:5px;
+}

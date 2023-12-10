@@ -1,0 +1,112 @@
+:root{
+    --border:  rgb(199, 199, 199);
+    --orange: #fd3f00;
+}
+.topSection{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.logo{
+    content: url(../../assets/logo.svg);
+    cursor: pointer;
+    width: 120px;
+    margin-left: 80px;  
+}
+.searchIcon{
+    position: absolute;
+    content: url(../../assets/search.svg);
+    background-color: transparent;
+    height: 20px;
+    display: flex;
+    margin-left: clamp(10px, 40%, 215px);
+    margin-top: 10px;
+    z-index: 101;
+}
+.input {
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #fff;
+    border-color: var(--orange);
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 15px;
+    margin-left: clamp(10px, 40%, 800px);
+    z-index: 100;
+}
+.input:focus{
+   border-color: var(--orange);
+   outline: none;
+}
+
+.search{
+    background-color: transparent;
+}
+.searchBtn{
+    position: absolute;
+    top: 25px;
+    left: 700px;
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+@media  (max-width: 1260px) {
+    .shop {
+        visibility: hidden;
+    }
+    .login{
+        visibility: hidden;
+    }
+}
+.shop{
+    
+    position: absolute;
+    right: 180px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border-style: solid;
+    border: none;
+    background-color: #fff;
+}
+.shopIcon{
+    display: flex;
+    content: url(../../assets/shop.svg);
+    z-index: 200;
+}
+.login{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border-style: solid;
+    border: none;
+    background-color: #fff;
+}
+.loginIcon{
+    display: flex;
+    content: url(../../assets/loginIcon.svg);
+    z-index: 200;
+}
